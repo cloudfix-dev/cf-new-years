@@ -30,9 +30,11 @@ const App: React.FC = () => {
         >
           {currentMessage}
         </motion.p>
-        <Button onClick={generateNewMessage} className="bg-blue-500 hover:bg-blue-600">
-          <Sparkles className="mr-2 h-4 w-4" /> Generate New Message
-        </Button>
+        <div className="flex justify-center">
+          <Button onClick={generateNewMessage} className="bg-blue-500 hover:bg-blue-600">
+            <Sparkles className="mr-2 h-4 w-4" /> Generate New Message
+          </Button>
+        </div>
       </motion.div>
     </div>
   );
